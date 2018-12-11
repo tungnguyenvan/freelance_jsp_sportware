@@ -1,0 +1,167 @@
+﻿use sportware;
+create table produces(
+	id int IDENTITY(1,1) primary key,
+	name varchar(255),
+	description text,
+	price int,
+	image text
+);
+
+create table users(
+	id int IDENTITY(1,1) primary key,
+	name varchar(255),
+	email varchar(255),
+	password varchar(255)
+);
+
+create table carts(
+	id int IDENTITY(1,1) primary key,
+	id_user int,
+	id_produce int,
+
+	constraint fk_user foreign key (id_user) references users (id),
+	constraint fk_produce foreign key (id_produce) references produces (id)
+)
+
+use sportware;
+insert into produces(name, description, price, image) values('SLIM FITTED SWEAT PANTS', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-1.jpg');
+insert into produces(name, description, price, image) values('LONG JACKET', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-2.jpg');
+insert into produces(name, description, price, image) values('HIGH NECK SWEATSHIRT', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-3.jpg');
+insert into produces(name, description, price, image) values('DETAILED TRAINING TIGHTS', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-4.jpg');
+insert into produces(name, description, price, image) values('SLIM FITTED SWEAT PANTS', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-5.jpg');
+insert into produces(name, description, price, image) values('LOOSE SPORTS TOP', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-6.jpg');
+insert into produces(name, description, price, image) values('DETAILED SPORTS JACKET', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-7.jpg');
+insert into produces(name, description, price, image) values('CONTRAST SWEATSHIRT', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-8.jpg');
+insert into produces(name, description, price, image) values('
+BỘ QUẦN ÁO THỂ THAO NAM FCDK ST405', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-9.jpg');
+insert into produces(name, description, price, image) values('CONTRAST TRAINING TIGHTS', 'PRODUCT DESCRIPTION
+- Sweat pants from ONLY PLAY.
+- Elastic rib at waist with tie string.
+- 2 front pockets.
+- Rib below at each leg.
+- The model is 176 cm tall and is wearing size S.
+65% Polyester, 35% Cotton
+Machine wash at 30°C
+Do not bleach
+Do not tumble dry
+Low temp. iron. Highest temp. 100°C
+Do not dry clean
+Article Number: 15108842
+EAN:', 100000, 'image-10.jpg');
